@@ -71,7 +71,7 @@ aside p{
 }
 aside h2{
     position: absolute; 
-    right: 270px;
+    right: 260px;
     top: 40px; 
     font-size: small; 
     margin-bottom: var(--standard_size);
@@ -92,6 +92,7 @@ footer {
     margin: var(--standard_size);
     border: var(--borders);
     padding: 1rem;
+    padding-left: 2rem;
     background-color: var(--red);
     color: var(--black);
 }
