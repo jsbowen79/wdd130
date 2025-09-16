@@ -1,98 +1,97 @@
+* {
+    max-width: 750px;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
 :root {
     --borders: 2px solid black; 
     --darkblue: darkblue; 
+    --white: white;
+    --red: red;
+    --black: black; 
+    --standard_size: 1rem; 
 }
+
 nav {
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
     background-color: var(--darkblue);
-    padding: 10px;
+    padding: var(--standard_size);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
-}
-
-body{
-    display: grid;
-    grid-template-rows: auto auto auto auto auto; 
-    grid-template-columns: 900px 900px;
-    margin: 0 auto;
-}
-
-header {
-    grid-column: 1 / -1;
-    grid-row: 1;  
-}
-
-main {
-    
-    grid-column: 1;
-    grid-row:3/5; 
-    grid-template-rows: auto auto; 
-    display:grid;
-    max-width: 1920px;
+    padding: var(--standard_size);
 }
 
 
 h1 {
-    display: grid;
     color: var(--darkblue);
     text-align: center;
-    grid-column: 1 / -1;
-    grid-row: 1;
     margin: 0px;  
 }
 
 main img {
- 
-    grid-column: 1;
-    grid-row: 1;  
+    float: right;
     width: 250px;
     height: auto;
     border: var(--borders);
-    padding: 0px;
+    padding: var(--standard_size);
     box-shadow: 0 0 30px gray;
+    background-color: var(--black);
+    margin: var(--standard_size);
 }
 
 main p {
-    padding: 0; 
-    grid-column: 1/-1;
-    grid-row: 2; 
+    padding: var(--standard_size); 
+    margin: var(--standard_size);
    
 }
 
 aside{
-    grid-row: 3;
-    grid-column: 2;
+    position: relative; 
     text-align: center;
-    width:700px;
-    height: 350px; 
-    margin: 2px; 
-    border: var(--borders); 
-    padding: 5px;
-    background-color: red;
-    color: black;
-}
+    margin: var(--standard_size); 
+ }
 
 aside img{
     
+    background-color: var(--red);
     width: 200px;
     height: auto;
-    margin: 0 auto;
+    margin: var(--standard_size) auto;
 }
 
-aside p{
+aside p{  
     font-size: large;
-    margin-top: 50px;
+
+}
+aside h2{
+    position: absolute; 
+    right: 270px;
+    top: 40px; 
+    font-size: small; 
+    margin-bottom: var(--standard_size);
+    font-weight: bold;
+    color: var(--black) 
 }
 
 footer {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: 5; 
+ 
     text-align: center;
     margin-top: 10px;
     border-top: 2px dotted;
     margin-right: 50px;
+}
+
+/* Class Selectors */
+.box {
+    margin: var(--standard_size);
+    border: var(--borders);
+    padding: 1rem;
+    background-color: var(--red);
+    color: var(--black);
 }
