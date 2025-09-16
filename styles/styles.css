@@ -19,6 +19,7 @@ nav {
     grid-template-columns: auto auto auto auto;
     background-color: var(--darkblue);
     padding: var(--standard_size);
+    margin-right: var(--standard_size)
 }
 
 nav a {
@@ -80,11 +81,11 @@ aside h2{
 }
 
 footer {
- 
+    clear: both;
     text-align: center;
     margin-top: 10px;
     border-top: 2px dotted;
-    margin-right: 50px;
+    margin-right: var(--standard_size);
 }
 
 /* Class Selectors */
