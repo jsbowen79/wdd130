@@ -1,8 +1,8 @@
 :root {
-    --primary-color: blanchedalmond;
-    --text-color: darkblue;
+    --primary-color: rgb(44, 110, 196);
+    --text-color: white;
     --accent1-color: yellow; 
-    --accent2-color: rgba(255, 255, 0, 0.836);
+    --accent2-color: rgb(148, 18, 18);
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: "Times New Roman", "Georgia", serif; 
 }
@@ -55,7 +55,7 @@ h1 {
 }
 
 .hero article {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     border: black;
     position: absolute; 
     bottom: 5px; 
@@ -69,4 +69,106 @@ h1 {
     width: 200px;
     float: right; 
     box-shadow: 8px 8px 4px grey; 
+}
+
+header {
+    display: grid; 
+    grid-template-columns: 30% 70%;
+    justify-content: right;
+}
+
+header img {
+    width: 150px;
+    margin: 0 0 0 130px;  
+    
+}
+
+nav {
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding: 2rem; 
+}
+
+h2{
+    text-align: center;
+}
+
+.history{
+    background-color: var(--primary-color);
+    display: grid; 
+    justify-content: space-around;
+    grid-template-columns: 1fr 15% 1fr;
+    grid-template-rows: 50px 1fr;
+
+}
+
+.history h2 {
+    grid-area:1/1/2/4;
+    justify-content: center;
+}
+
+.history img{
+    width: 100px;
+    grid-area: 2/2/3/3;
+    align-self: center;
+    justify-self:  center; 
+      
+}
+
+.adventure{
+    display: flex; 
+    flex-direction: column; 
+    background-color: var(--accent2-color);
+}
+
+.adventure-photos {
+    object-fit: cover;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.adventure-photos figure{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+figure img, caption{
+    width: 140px;
+}
+
+footer{
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+    color: black;
+}
+
+footer img {
+    width: 50px;
+    height: 50px; 
+    object-fit: contain ; 
+}
+
+.socialmedia{
+    grid-area: 1/2/2/3;
 }
