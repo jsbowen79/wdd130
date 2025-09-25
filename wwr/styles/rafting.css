@@ -1,6 +1,7 @@
 :root {
-    --primary-color: rgb(26, 75, 138);
+    --primary-color: rgb(11, 54, 109);
     --text-color: white;
+    --text-color2: black; 
     --accent1-color: yellow; 
     --accent2-color: rgb(148, 18, 18);
     --heading-font: Arial, Helvetica, sans-serif;
@@ -33,6 +34,11 @@ nav, p, section, article {
     padding: 8px; 
 }
 
+header  a{
+    color: var(--text-color2);
+    text-decoration: none;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -56,7 +62,7 @@ h1 {
 
 .hero article {
     background-color: var(--accent2-color);
-    border: black;
+    border: var(--text-color2);
     position: absolute; 
     bottom: 5px; 
     left: 5px; 
@@ -114,7 +120,7 @@ h2{
     background-color: var(--primary-color);
     display: grid; 
     justify-content: space-around;
-    grid-template-columns: 1fr 15% 1fr;
+    grid-template-columns: 1fr 18% 1fr;
     grid-template-rows: 50px 1fr;
 
 }
@@ -125,7 +131,7 @@ h2{
 }
 
 .history img{
-    width: 100px;
+    width: 130px;
     grid-area: 2/2/3/3;
     align-self: center;
     justify-self:  center; 
@@ -160,7 +166,7 @@ figure img, caption{
 footer{
     display: grid; 
     grid-template-columns: 3fr 1fr;
-    color: black;
+    color: var(--text-color2);
 }
 
 footer img {
