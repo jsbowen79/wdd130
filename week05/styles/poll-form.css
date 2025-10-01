@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+    font-size:  1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+main{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem; 
+    width: 650px; 
+    margin: 0 auto; 
+    display: grid; 
+
+}
+
+legend{
+    font-size: 1rem;
+    color: blue;
+    border: 1px grey; 
+    grid-area: 1/1/2/4;
+}
+
+label, input, button, select, textarea{
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact {
+    display: grid;
+    grid-gap: 5px; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 5fr;
+    padding-bottom: 10px; 
+
+}
+
+.contact  label{
+    grid-column: 1;
+    text-align: right;
+    padding-right: 15px; 
+}
+
+.contact input{
+    width: 98%;
+    grid-column: 2;
+    justify-self: left;
+    font-size: 20px;
+}
+
+.questions select{
+    font-size: 1rem;
+    width: 150px;
+    font-size: 20px;
+}
+
+.questions{
+    display: grid;
+    grid-template-columns:1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 200px;
+      
+}
+
+.special{
+    grid-area: 3/1/4/6 !important;
+    margin: 0 auto;
+}
+
+.questions label{
+    grid-column: 1/5;
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 10px; 
+}
+
+.questions input{
+    font-size: 20px;
+    width: 200 px; 
+    grid-column: 5/6;
+    margin-top: 10px; 
+
+}
+
+
+textarea{
+    grid-area: 4/1/5/6; 
+    margin: 10px; 
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: blue;
+    margin: 5px ; 
+    color: white; 
+    border-radius: 10px;
+    justify-self: center; 
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+}
+
+footer {
+    margin: 5px;
+    width: 650px;
+    text-align: left;
+
+}
