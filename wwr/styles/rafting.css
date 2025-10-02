@@ -6,6 +6,7 @@
     --accent2-color: rgb(148, 18, 18);
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: "Times New Roman", "Georgia", serif; 
+    --standard-padding: 5px; 
 }
 
 * {
@@ -31,7 +32,7 @@ h1, h2, h3, h4 {
 
 nav, p, section, article {
     margin: 16px auto;
-    padding: 8px; 
+    padding: var(--standard-padding); 
 }
 
 header  a{
@@ -64,8 +65,8 @@ h1 {
     background-color: var(--accent2-color);
     border: var(--text-color2);
     position: absolute; 
-    bottom: 5px; 
-    left: 5px; 
+    bottom: var(--standard-padding); 
+    left: var(--standard-padding); 
     font-size: large;
    
 }
@@ -116,7 +117,7 @@ h2{
     text-align: center;
 }
 
-.history{
+.history {
     background-color: var(--primary-color);
     display: grid; 
     justify-content: space-around;
@@ -177,4 +178,137 @@ footer img {
 
 .socialmedia{
     grid-area: 1/2/2/3;
+}
+
+.body{
+    background-color: var(--primary-color);
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    padding: var(--standard-padding);
+}
+
+.id{
+    grid-area: 1/1/2/3;
+    display: block;
+    text-align: center; 
+}
+
+h2{
+    padding-top: 20px;
+}
+
+iframe{
+    width: 400px; 
+    height: 400px;
+    padding: var(--standard-padding);
+    border: none; 
+}
+
+form{
+    height: 400px;
+    display: grid;
+    grid-template-columns:30% 70%; 
+    grid-template-rows: repeat(5, 1fr) 3fr 1fr 1fr;
+    padding-left: 2rem; 
+    
+}
+
+.name{
+    grid-area: 1/1/2/3;
+    display: flex;
+    flex-direction: row; 
+}
+
+.email{
+    grid-area: 2/1/3/3;
+    display: flex;
+    flex-direction: row; 
+}
+
+.name input, .email input{
+    width: 310px;
+    height: 1rem; 
+    padding:.5rem;
+}
+
+.name label, .email label{
+    width: 80px;
+   
+}
+
+
+.textarea{
+    grid-area: 6/1/7/3;
+    display: flex;
+    flex-direction: column;
+    width: 390px; 
+}
+
+.subscribe{
+    grid-area: 7/1/8/3;
+}
+
+.submit{
+    grid-area: 8/1/9/3;
+}
+
+.radio{
+    grid-area: 3/1/6/3;
+    display: grid; 
+    grid-template-columns: 80px 25px 1fr;
+    grid-gap: 0;
+
+}
+
+.radio a{
+    grid-area: 1/1/4/2;
+    max-width: 100px;
+    align-self: center;
+}
+
+.radio label {
+    grid-column: 3;
+    padding-top: var(--standard-padding);
+    padding-left: var(--standard-padding);
+}
+
+.radio input{
+    padding-right: var(--standard-padding);
+    grid-column: 2;
+    width: 15px;
+}
+
+textarea{
+    height: 80px;
+}
+
+.submit input[type="submit"]{
+    display: block;
+    background-color: var(--accent1-color);
+    margin: 5px ; 
+    color: var(--text-color2); 
+    border-radius: 10px;
+    justify-self: center; 
+    font-size: 1.5rem;
+    padding: var(--standard-padding)
+}
+
+.submit input[type="submit"]:hover {
+    background-color: green;
+}
+
+.employees{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.employees figure img{
+    width: 200px; 
+    height: auto;
+}
+
+.employees figure figcaption{
+    text-align: center;
 }
