@@ -25,7 +25,7 @@
     <main>
         <div class="body">
             <div class="id">
-                <h2>Razor's Edge Rafting Company</h2>
+                <h1>Razor's Edge Rafting Company</h1>
                 <p>11565 Main Street<br>
                     Georgetown, Colorado 80444 <br>
                     1 (720) 679-3754 <br>
@@ -49,14 +49,12 @@
                 </div>
                 <div class="radio">
                     <a>Message Purpose</a>
-                    <input type="radio" id="purpose" name="purpose" value="General Inquiry">
-                    <label for="purpose">General Inquiry</label>
-                    <input type="radio" id="purpose" name="purpose" value="Reservation Question">
-                    <label for="purpose">Reservation Question</label>
-                    <input type="radio" id="purpose" name="purpose" value="Website Suggestion">
-                    <label for="purpose">Website Suggestion</label>
-                    <input type="radio" id="purpose" name="purpose" value="Route Request">
-                    <label for="purpose">Route Request</label>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                    <label for="inquiry">General Inquiry</label>
+                    <input type="radio" id="question" name="purpose" value="Reservation Question">
+                    <label for="question">Reservation Question</label>
+                    <input type="radio" id="website" name="purpose" value="Website Suggestion">
+                    <label for="website">Website Suggestion</label>
                 </div>
                 <div class="textarea">
                     <label for="message">Message</label>
@@ -67,7 +65,9 @@
                     <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
                 </div>
                 <div class="submit">
-                    <input type="submit" id="submit" name="submit" value="Get in Touch!">
+                    <button type="submit" id="submit" name="submit" value="Get in Touch!">
+                        <b>Get in Touch!</b>
+                    </button>
                 </div>
             </form>
         </div>
