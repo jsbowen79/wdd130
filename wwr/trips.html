@@ -3,9 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Available Trips at Razor's Edge Rafting Company</title>
+    <meta name="description" content="A listing of trips and options available through Razor's Edge Rafting Company">
+    <meta name="author" content="Joseph Bowen">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/razors-edge-logo2.png" alt="A logo showing people white water rafting on a river in Colorado">
+        <nav>
+            <ul>
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="trips.html">Trips</a> </li>
+                <li> <a href="contact.html">Contact Us</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="body">
+            <table>
+                <caption class="standout">
+                    Razor's Edge Rafting Trip Options
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Rapid Classes</th>
+                        <th scope="col">Available Rivers</th>
+                        <th scope="col">1/2 Day Price</th>
+                        <th scope="col">Full Day Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <th class="rapids" scope="row">
+                                <img src="images/class-1-rapids.jpeg" alt="A picture of Class 1 rapids">
+                            </th>
+                        <td>Class 1</td>
+                        <td>Colorado</td>
+                        <td>$30</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rapids">
+                            <img src="images/class-2-rapids.jpeg" alt="A picture of Class 2 rapids">
+                        </th>
+                        <td>Class 2</td>
+                        <td>Colorado, Eagle, Blue, Clear Creek</td>
+                        <td>$50</td>
+                        <td>$160</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rapids">
+                            <img src="images/class3_Salmon_River.jpg" alt="A picture of Class 3 rapids">
+                        </th>
+                        <td>Class 3</td>
+                        <td>Colorado, Eagle, Blue, Clear Creek</td>
+                        <td>$100</td>
+                        <td>$290</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rapids">
+                            <img src="images/class-4-rapids.jpg" alt="A picture of Class 4 rapids">
+                        </th>
+                        <td>Class 4</td>
+                        <td>Colorado, Eagle, Blue, Clear Creek</td>
+                        <td>$160</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rapids">
+                            <img src="images/class-5-rapids.jpeg" alt="A picture of Class 5 rapids">
+                        </th>
+                        <td>Class 5 or above</td>
+                        <td>Colorado, Eagle, Clear Creek</td>
+                        <td>$200</td>
+                        <td>$500</td>
+                    </tr>
+                </tbody>
+                <tfoot>    
+                    <tr>
+                        <th scope="row" colspan="3">Participation in Class 5 and above trips requires certification 
+                            and membership in Razor's Edge Extreme Team!
+                        </th>
+                        <td colspan="2" class="register">
+                            <a href="contact.html">Register Now</a>
+                        </td>  
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="grid">
+            <div class="classes">
+                <img src="images/3.jpg" alt="A picture of rafters navigating a class 3 obstacle.">
+                <p>
+                    A full day rafting trip on the Colorado River includes 6 hours of time on the water,
+                    a hot lunch, all necessary equipment, safety spotters, and transportation to and from the river.
+                    This was a Class 3 trip on the Colorado River!   
+                </p>
+                <img src="images/1.jpg" alt="A picture of rafters on a class 2 section of the Colorado River">
+                <p>
+                    A half day rafting trip includes 3 hours on the water, all necessary equipment, safety spotters,
+                    and transportation to and from the river. This is a Class 2 section of the Colorado River.  
+                </p>
+                <img src="images/4.jpg" alt="A picture of rafters navigating a Class 5 obstacle on Clear Creek">
+                <p>Membership in the Razor's Edge Extreme Team requires you to pass a competency exam.  Once
+                    you are a member, you can participate in Class 5 and above trips.  These trips include the 
+                    same amenities as lower class trips, but all guides are certified in high risk water rescue 
+                    and emergency first aid. 
+                </p>
+            </div>
+            <div>
+                <form class="newsletter">
+                    <h3>To schedule a rafting trip, fill out and submit the following form! <br>
+                        We will contact you within 24 hours.</h3>
+                    <div class="personal">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Your Name Here">
+
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="myemail@razorsedge.fun">
+
+                        
+                        <label for="address">Address: </label>
+                        <input type="text" name="address" id="address"placeholder="123 Easy Street, Denver, CO 80012">
+
+                        
+                        <label for="phone">Phone: </label>
+                        <input type="phone" name="phone" id="phone" placeholder="(303) 123-4567">
+
+                        
+                        <label for="class">Rapid Class: </label>
+                        <select name="class" id="class">
+                            <option value="class 1">Class 1</option>
+                            <option value="class 2">Class 2</option>
+                            <option value="class 3">Class 3</option>
+                            <option value="class 4">Class 4</option>
+                            <option value="class 5">Class 5</option>
+                        </select>
+
+                        <label for="length">Trip Length: </label>
+                        <select name="length" id="length">
+                            <option value="full day">Full Day</option>
+                            <option value="half day">Half Day</option>
+                        </select>
+
+                        <label for="river">River: </label>
+                        <select name="river" id="river">
+                            <option value="colorado">Colorado River</option>
+                            <option value="blue">Blue River</option>
+                            <option value="eagle">Eagle River</option>
+                            <option value="clear-creek">Clear Creek</option>
+                        </select>
+
+                    </div>
+                    
+                    <div class="submit">
+                        <button type="submit" id="submit" name="submit" value="Request A Trip">Request a Trip</button>
+                    </div>
+                    <img src="images/razors-edge-logo2.png" alt="The Razor's Edge Rafting company logo">
+                    <div class="button">
+                        
+                        <h5>Join the Razor's Edge Extreme Team!</h5>
+                        <a href="contact.html" class="trips">Contact Us for Information!</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2025 🥋 Joseph Bowen 🥋 Razor's Edge Rafting Company</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-logo.jpg" alt="Facebook icon">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-logo.png" alt="X social media icon">
+            </a>
+            <a href="https://linkedin.com/">
+                <img src="images/linkedin-logo.jpeg" alt="LinkedIn icon">
+            </a>
+        </nav>
+    </footer> 
 </body>
 </html>
