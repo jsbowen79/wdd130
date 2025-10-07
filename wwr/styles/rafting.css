@@ -422,7 +422,7 @@ h5, h4{
 
 .button{
     grid-area: 11/1/12/4;
-    border: 4px solid var(--text-color2;) 
+    border: 4px solid var(--text-color2) 
 }
 
 .newsletter .submit{
